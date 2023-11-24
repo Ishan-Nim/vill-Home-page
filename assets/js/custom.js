@@ -269,13 +269,8 @@ function toggleButtonMap() {
         if (toggleNumber) {
             toggleContainer.style.clipPath = 'inset(0 0 0 50%)';
             toggleContainer.style.backgroundColor = '#D74046';
-            $('#sss').css({
-                opacity: 0,                display:"none",
-
-                transform: 'translate3d(0,' + 30 + 'px , 0)'
-            });     $('#ss').css({
-                opacity: 1,
-                display:"flex",
+            $('.location__address-container').css({
+                opacity: 0,
                 transform: 'translate3d(0,' + 30 + 'px , 0)'
             });
             $('.box-info-wrap').addClass('show-map');
@@ -283,14 +278,9 @@ function toggleButtonMap() {
         } else {
             toggleContainer.style.clipPath = 'inset(0 50% 0 0)';
             toggleContainer.style.backgroundColor = 'dodgerblue';
-            $('#sss').css({
-                opacity: 1,                display:"inherit",
-
+            $('.location__address-container').css({
+                opacity: 1,
                 transform: 'translate3d(0,0,0)'
-            });$('#ss').css({
-                opacity: 0,
-                display:"none",
-                transform: 'translate3d(0,' + 30 + 'px , 0)'
             });
             $('.box-info-wrap').removeClass('show-map');
         }
